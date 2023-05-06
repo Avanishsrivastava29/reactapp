@@ -41,7 +41,7 @@ const displaySummary = ({ users }) => {
   return (
     <Grid>
       {users.map((curUser) => {
-        const { id, name, summary, image } = curUser.show;
+        const { id, name, summary,} = curUser.show;
         const { score } = curUser;
 
 
@@ -50,7 +50,7 @@ const displaySummary = ({ users }) => {
           <Profile key={id}>
             
             <UserName>  {name}</UserName>
-            <Score> score = {summary}</Score>
+            <Score> summary= {summary}</Score>
          
              
 
